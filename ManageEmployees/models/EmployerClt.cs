@@ -3,7 +3,7 @@ using ManageEmployees.interfaces;
 
 namespace ManageEmployees.models
 {
-    public class EmployerClt : Emoloyees, IBenefits
+    public class EmployerClt(string name, double baseSalary) : Emoloyees(name, baseSalary), IBenefits
     {
         public Benefits CalculateBenefits()
         {
@@ -22,7 +22,10 @@ namespace ManageEmployees.models
 
         public override void CalculateSalary()
         {
-            throw new NotImplementedException();
+            Benefits benefits = CalculateBenefits();
+            double finalSalary = benefits.Total - BaseSalary;
+
+            Console.WriteLine($"O Sálario base do {Name}, é R${BaseSalary}. Porém com os béneficios de vale-alimentação(R${benefits.FoodVoucher}) e  vale-transporte(R${benefits.TransportVoucher}), será descontados R${benefits.Total} do sálario. Deixando um sálario final de R$ {finalSalary}");
         }
     }
 }
