@@ -3,7 +3,7 @@
     public abstract class Emoloyees
     {
         protected string? Name { get; set; }
-        protected double SalarioBase { get; set; }
+        protected double BaseSalary { get; set; }
         public abstract void CalculateSalary();
 
         delegate void emoloyeesRegisterHandler();

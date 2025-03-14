@@ -8,7 +8,7 @@ namespace ManageEmployees.models
 {
     public class Benefits
     {
-        public double MealVoucher { get; set; }
+        public double TransportVoucher { get; set; }
         public double FoodVoucher { get; set; }
         public double Total { get; set; }
     }
