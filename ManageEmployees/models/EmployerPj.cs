@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ManageEmployees.models
+﻿namespace ManageEmployees.models
 {
     public class EmployerPj(string name, double baseSalary, int workHours) : Employees(name, baseSalary)
     {
