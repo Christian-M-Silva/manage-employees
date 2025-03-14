@@ -1,6 +1,6 @@
 ﻿namespace ManageEmployees.models
 {
-    public abstract class Emoloyees(string name, double baseSalary)
+    public abstract class Employees(string name, double baseSalary)
     {
         protected string? Name { get; set; } = name;
         protected double BaseSalary { get; set; } = baseSalary;

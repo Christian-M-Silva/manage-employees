@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ManageEmployees.models
 {
-    public class EmployerPj(string name, double baseSalary) : Emoloyees(name, baseSalary)
+    public class EmployerPj(string name, double baseSalary) : Employees(name, baseSalary)
     {
         public int WorkHours { get; set; }
 

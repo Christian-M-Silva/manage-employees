@@ -3,7 +3,7 @@ using ManageEmployees.interfaces;
 
 namespace ManageEmployees.models
 {
-    public class EmployerClt(string name, double baseSalary) : Emoloyees(name, baseSalary), IBenefits
+    public class EmployerClt(string name, double baseSalary) : Employees(name, baseSalary), IBenefits
     {
         public Benefits CalculateBenefits()
         {
