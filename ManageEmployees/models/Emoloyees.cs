@@ -1,4 +1,4 @@
-﻿namespace ManageEmployees
+﻿namespace ManageEmployees.models
 {
     public abstract class Emoloyees
     {
