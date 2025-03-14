@@ -6,13 +6,13 @@
         protected double BaseSalary { get; set; } = baseSalary;
         public abstract void CalculateSalary();
 
-        delegate void emoloyeesRegisterHandler();
-        event emoloyeesRegisterHandler? OnEmoloyeesRegister;
+        public delegate void emoloyeesRegisterHandler();
+        public event emoloyeesRegisterHandler? OnEmployeesRegister;
 
         public void Start()
         {
             CalculateSalary();
-            OnEmoloyeesRegister?.Invoke();
+            OnEmployeesRegister?.Invoke();
         }
     }
 }

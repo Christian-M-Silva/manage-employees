@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace ManageEmployees.models
 {
-    public class EmployerPj(string name, double baseSalary) : Employees(name, baseSalary)
+    public class EmployerPj(string name, double baseSalary, int workHours) : Employees(name, baseSalary)
     {
-        public int WorkHours { get; set; }
+        public int WorkHours { get; set; } = workHours;
 
         public override void CalculateSalary()
         {
             double finalSalary = WorkHours * BaseSalary;
-            Console.WriteLine($"{Name} trabalhou {WorkHours}:00. Sendo o seu sálario R${BaseSalary}, terá como sálario final {finalSalary}");
+            Console.WriteLine($"{Name} trabalhou {WorkHours}:00. Sendo o seu sálario R${BaseSalary}, terá como sálario final {finalSalary}.");
         }
     }
 }
